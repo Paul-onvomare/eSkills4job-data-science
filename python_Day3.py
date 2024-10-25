@@ -35,10 +35,12 @@ user_input = int(input("Enter a number b/n 10 and 20"))
 while (10 > user_input < 20):
     if user_input < 10:
         print("Too low")
-        user_input = int(input("Try the guess aain: "))
-    elif user_input > 20:
+        # user_input = int(input("Try the guess aain: "))
+
+    if user_input > 20:  
         print("Too High")
-        user_input = int(int("Try the guess again: "))
+        # user_input = int(int("Try the guess again: "))
     else:
         print("Thank you")
+    user_input = int(input("Try the guess again: "))
 
